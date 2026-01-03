@@ -1,9 +1,11 @@
 # Ignore everything
 *
 
-# Except db-bahn
+# Except our skills
 !db-bahn/
 !db-bahn/**
+!gif/
+!gif/**
 
 # Keep this file
 !.gitignore
