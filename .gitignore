@@ -4,6 +4,8 @@
 # Except our skills
 !db-bahn/
 !db-bahn/**
+!decide/
+!decide/**
 
 # Keep this file
 !.gitignore
