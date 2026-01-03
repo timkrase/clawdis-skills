@@ -6,6 +6,8 @@
 !db-bahn/**
 !decide/
 !decide/**
+!football/
+!football/**
 
 # Keep this file
 !.gitignore
