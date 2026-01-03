@@ -1,0 +1,9 @@
+# Ignore everything
+*
+
+# Except db-bahn
+!db-bahn/
+!db-bahn/**
+
+# Keep this file
+!.gitignore
