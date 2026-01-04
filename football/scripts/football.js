@@ -75,12 +75,20 @@ function isInteresting(match) {
   return isTopTeam(match.homeTeam) || isTopTeam(match.awayTeam);
 }
 
+// Default timezone for display (Tim is in Germany)
+const DISPLAY_TIMEZONE = 'Europe/Berlin';
+
 function formatDate(date) {
-  return date.toISOString().split('T')[0];
+  // Format date in German timezone
+  return date.toLocaleDateString('sv-SE', { timeZone: DISPLAY_TIMEZONE }); // sv-SE gives YYYY-MM-DD format
 }
 
 function formatTime(date) {
-  return date.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
+  return date.toLocaleTimeString('de-DE', { 
+    hour: '2-digit', 
+    minute: '2-digit',
+    timeZone: DISPLAY_TIMEZONE 
+  });
 }
 
 // OpenLigaDB (German leagues)
