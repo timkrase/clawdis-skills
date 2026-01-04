@@ -8,6 +8,8 @@
 !decide/**
 !football/
 !football/**
+!qmd/
+!qmd/**
 
 # Keep this file
 !.gitignore
